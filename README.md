@@ -2,7 +2,7 @@
 
 Welcome to the Liverpool FC website, a platform dedicated to everything related to Liverpool Football Club. Here, you can explore the rich history, current squad, and key facts about one of the most iconic football clubs in the world.
 
-![Liverpool FC Logo]("./images/Liverpool_FC.png")
+![Liverpool FC Logo](https://en.wikipedia.org/wiki/File:Liverpool_FC.svg)
 
 ## Table of Contents
 
