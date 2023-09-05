@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+
+.history-container {
+  padding: 2rem 2rem 0;
+}
+
+.history-container h1 {
+  text-align: start;
+  font-family: "Bakbak One", cursive;
+  color: white;
+  max-width: fit-content;
+  padding: 5px 15px;
+  border-radius: 50px;
+  background: #000000; 
+  background: -webkit-linear-gradient(
+    to top,
+    #e74c3c,
+    #000000
+  ); 
+  background: linear-gradient(
+    to top,
+    #e74c3c,
+    #000000
+  ); 
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-block: 3rem;
+}
+
+.history-row{
+    row-gap: 1rem;
+    margin-block: 6rem 2rem;
+}
+
+.history-item {
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 50px;
+}
+
+.history-item .history-img {
+  border-radius: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.history-item h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-family: "Bakbak One", cursive;
+  color: red;
+}
+
+.history-item p {
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 576px) {
+  .history-item {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .history-item {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .history-item {
+    padding: 4rem;
+  }
+}
