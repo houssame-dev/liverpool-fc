@@ -40,18 +40,21 @@ Liverpool FC Website is a web application built to provide fans and enthusiasts 
    
 2. Navigate to the project directory:
 
+   ```bash
    cd liverpool-fc-website
    
 
-3. Install the necessary dependencies:
-
+4. Install the necessary dependencies:
+   
+   ```bash
    npm install
    
 
 ## Usage
 
 1. Start the development server:
-
+   
+   ```bash
    npm start
    
 
