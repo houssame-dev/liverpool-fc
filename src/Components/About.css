@@ -1,22 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
-
-.about-container {
+.about .about-container {
   padding: 2rem 2rem 2rem;
   background-color: #f8f8f8;
 }
 
-.list-group {
+.about .list-group {
   list-style-type: disc;
   text-align: center;
   margin-block: 3rem 2rem;
   border-radius: 50px;
 }
 
-.list-group-item {
+.about .list-group-item {
   font-size: 1rem;
   margin-bottom: 2rem;
   border-radius: 50px;
-  font-family: "Bakbak One", cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   color: red;
   max-width: fit-content;
@@ -24,27 +23,32 @@
 }
 
 @media (min-width: 576px) {
-  li {
+  .about li {
     font-size: 1.25rem;
   }
 }
 
 
-.about-container h1 {
+.about .about-container h1 {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: start;
-  font-family: "Bakbak One", cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: white;
   max-width: fit-content;
   padding: 5px 15px;
   border-radius: 50px;
   background: #000000; 
   background: -webkit-linear-gradient(
-    to top,
+    to bottom,
     #e74c3c,
     #000000
   ); 
   background: linear-gradient(
-    to top,
+    to bottom,
     #e74c3c,
     #000000
   ); 

@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
-
-.home-container {
+.home .home-container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.background-image {
+.home .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,7 +17,7 @@
   filter: brightness(0.4);
 }
 
-.home-content {
+.home .home-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,25 +26,25 @@
   color: white;
 }
 
-.home-content h1 {
+.home .home-content h1 {
   font-size: 5rem;
   margin-bottom: 5rem;
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
 }
 
-.home-btn {
+.home .home-btn {
   background-color: transparent;
   border: 2px solid white;
   padding: 0.75rem 2rem;
   font-size: 1.25rem;
   border-radius: 50px;
-  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
-  font-family: "Bakbak One", cursive;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 
   &:hover {
     background-color: white;
     color: red;
-    transform: scale(1.05);
     border: 2px solid transparent;
   }
 
@@ -57,7 +54,7 @@
 }
 
 @media (max-width: 768px) {
-  .home-content h1 {
+  .home .home-content h1 {
     font-size: 2rem;
   }
 }

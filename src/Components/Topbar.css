@@ -1,18 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
-
 .topbar {
-  background: #000000; 
-  background: -webkit-linear-gradient(
-    to top,
-    #e74c3c,
-    #000000
-  ); 
-  background: linear-gradient(
-    to top,
-    #e74c3c,
-    #000000
-  ); 
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #e74c3c, #000000);
+  background: linear-gradient(to bottom, #e74c3c, #000000);
   border-radius: 50px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   margin-inline: 10px;
@@ -20,57 +9,54 @@
   padding-inline: 20px;
 }
 
-.topbar-brand #liverpool-logo {
+.topbar .topbar-brand #liverpool-logo {
   width: 30px;
 }
-.topbar-item {
-  font-family: "Bakbak One", cursive;
+
+.topbar .topbar-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   text-decoration: none;
 }
 
-.topbar-item span {
+.topbar .topbar-item span {
   color: white;
   padding: 5px 10px;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
 }
 
-.topbar-item span:hover {
+.topbar .topbar-item span:hover {
   background-color: white;
   color: red;
   border-radius: 50px;
 }
 
-.mx-auto{
+.topbar .mx-auto {
   text-align: center;
 }
 
-#navbar-toggle{
+.topbar #navbar-toggle {
   background-color: white;
   border-radius: 50px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.social-icons{
+.topbar .social-icons {
   color: white;
-  border-radius: 50px;
-  padding: 2px 2px;
+  margin-left: 5px;
 }
 
-.social-icons:hover{
-  color: red;
-  background-color: white;
-}
-
-.social-list{
+.topbar .social-list {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 767px) {
-  .social-list{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  .ms-auto{
-    margin-top: 1.5rem;
+  .topbar .social-list {
+    margin-block: 2rem;
   }
 }

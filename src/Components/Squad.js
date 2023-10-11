@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import "aos/dist/aos.css";
-import aos from "aos"; 
+import React from "react";
 import Topbar from "./Topbar";
 import SquadData from "./SquadData";
 import "./Squad.css";
@@ -8,10 +6,6 @@ import { Card, Row, Col, Container, Badge } from "react-bootstrap";
 import { BsPeopleFill } from "react-icons/bs";
 
 function Squad() {
-  useEffect(() => {
-    aos.init({ duration: 3000 });
-  }, []);
-
   const orderOfPositions = ["Goalkeeper", "Defender", "Midfielder", "Forward"];
 
   const sortedSquad = [...SquadData].sort(
@@ -30,20 +24,20 @@ function Squad() {
   }, {});
 
   return (
-    <>
+    <div className="squad">
       <Topbar />
       <div className="squad-container">
         <Container>
-          <h1 data-aos="fade-right">
+          <h1>
             <BsPeopleFill size={40} /> Squad
           </h1>
           {Object.keys(positionGroups).map((position, index) => (
             <div key={index} className="position-group">
-              <h2 data-aos="fade-left">{position}s</h2>
+              <h2>{position}s</h2>
               <Row>
                 {positionGroups[position].map((player, index) => (
                   <Col key={index} xs={12} sm={6} md={4} lg={3}>
-                    <Card className="player-card" data-aos="fade-up">
+                    <Card className="player-card">
                       <Card.Img
                         variant="top"
                         src={player.image}
@@ -53,14 +47,17 @@ function Squad() {
                         <Card.Title>{player.name}</Card.Title>
                         <hr />
                         <Card.Text>
-                          <strong>{player.position} </strong>
-                          <Badge bg="danger" pill>
-                          <strong>  {player.jerseyNumber}</strong>
-                          </Badge>
-                          <br />
+                          <div className="number-position">
+                            <Badge bg="danger" pill>
+                              <strong> {player.jerseyNumber}</strong>
+                            </Badge>
+                            <strong>{player.position} </strong>
+                          </div>
                           <strong>
-                            <img src={player.nationalityImage} alt="icon" />{" "}
-                            {player.nationality}
+                            <div className="nationality">
+                              <img src={player.nationalityImage} alt="icon" />{" "}
+                              {player.nationality}
+                            </div>
                           </strong>
                         </Card.Text>
                       </Card.Body>
@@ -72,7 +69,7 @@ function Squad() {
           ))}
         </Container>
       </div>
-    </>
+    </div>
   );
 }
 

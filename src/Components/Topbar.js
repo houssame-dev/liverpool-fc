@@ -5,10 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { BsPeopleFill } from "react-icons/bs";
 import { FaTrophy } from "react-icons/fa";
+import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 import { RiBookMarkFill, RiQuestionFill } from "react-icons/ri";
-import { LiaTwitter, LiaFacebookF, LiaInstagram } from "react-icons/lia";
-import { RiYoutubeFill } from "react-icons/ri";
-import liverpool_logo from "./images/Liverpool_FC_2.png";
+import liverpool_logo from "./images/Liverpool_FC_logo.png";
 import "./Topbar.css";
 
 function Topbar() {
@@ -54,7 +54,7 @@ function Topbar() {
             <Link to="/about" className="topbar-item">
               <Nav.Link href="#about">
                 <span>
-                  <RiQuestionFill size={23} /> ABOUT
+                  <RiQuestionFill size={20} /> ABOUT
                 </span>
               </Nav.Link>
             </Link>
@@ -63,12 +63,12 @@ function Topbar() {
           <div className="social-list">
             <Nav.Link href="https://twitter.com/LFC" target="_blank">
               <span>
-                <LiaTwitter size={35} className="social-icons" />
+                <FaXTwitter size={30} className="social-icons" />
               </span>
             </Nav.Link>
             <Nav.Link href="https://www.facebook.com/ArabicLFC" target="_blank">
               <span>
-                <LiaFacebookF size={35} className="social-icons" />
+                <FiFacebook size={30} className="social-icons" />
               </span>
             </Nav.Link>
             <Nav.Link
@@ -76,15 +76,7 @@ function Topbar() {
               target="_blank"
             >
               <span>
-                <LiaInstagram size={35} className="social-icons" />
-              </span>
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.youtube.com/@LiverpoolFC"
-              target="_blank"
-            >
-              <span>
-                <RiYoutubeFill size={35} className="social-icons" />
+                <FiInstagram size={30} className="social-icons" />
               </span>
             </Nav.Link>
           </div>

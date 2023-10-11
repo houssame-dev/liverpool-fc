@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import "aos/dist/aos.css";
-import aos from "aos";
+import React from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import { RiBookMarkFill } from "react-icons/ri";
 import HistoryData from "./HistoryData";
@@ -8,21 +6,18 @@ import Topbar from "./Topbar";
 import "./History.css";
 
 function History() {
-   useEffect(() => {
-    aos.init({ duration: 3000 });
-  }, []);
 
   return (
-    <>
+    <div className="history">
       <Topbar />
       <div className="history-container">
         <Container>
-          <h1 data-aos="fade-right">
+          <h1>
             <RiBookMarkFill /> History
           </h1>
           <Row className="history-row">
             {HistoryData.map((event, index) => (
-              <Col key={index} xs={12} md={6} lg={6} className="history-item" data-aos="flip-left">
+              <Col key={index} xs={12} md={6} lg={6} className="history-item">
                 <Image
                   src={`${event.image}`}
                   alt={event.title}
@@ -38,7 +33,7 @@ function History() {
           </Row>
         </Container>
       </div>
-    </>
+    </div>
   );
 }
 
